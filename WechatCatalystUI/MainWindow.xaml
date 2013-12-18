@@ -1,0 +1,10 @@
+﻿<Window x:Class="IMasson.WechatCatalyst.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button  Content="Prepare" Height="23" HorizontalAlignment="Left" Margin="31,30,0,0" Name="btn_prepare" VerticalAlignment="Top" Width="75" Click="btn_prepare_Click" />
+        <Button Content="Launch" Height="23" HorizontalAlignment="Left" Margin="31,85,0,0" Name="btn_launch" VerticalAlignment="Top" Width="75" Click="btn_launch_Click" />
+        <TextBlock Height="129" HorizontalAlignment="Left" Margin="31,143,0,0" Name="tbk_output" Text="TextBlock" VerticalAlignment="Top" TextWrapping="Wrap" Width="431" />
+    </Grid>
+</Window>

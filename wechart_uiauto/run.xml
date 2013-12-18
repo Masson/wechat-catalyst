@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="wechart_uiauto" default="local">
+
+	<target name="local">
+		<exec executable="cmd" failonerror="true">
+			<arg value="/c" />
+			<arg value="adb" />
+			<!--<arg value="-d" />-->
+			<arg value="push" />
+			<arg value="D:\Source\Android\wechart_uiauto\bin\wechart_uiauto.jar" />
+			<arg value="/data/local/tmp/" />
+		</exec>
+		
+		<exec executable="cmd" failonerror="true">
+		    <arg value="/c" />
+            <arg value="adb" />
+            <!--<arg value="-d" />-->
+            <arg value="shell" />
+            <arg value="uiautomator" />
+            <arg value="runtest" />
+            <arg value="wechart_uiauto.jar" />
+            <arg value="-c" />
+            <arg value="com.imasson.auto.wechatuiauto.UiMainTest" />
+		</exec>
+	</target>
+	
+	<echo level="info">OK</echo>
+
+</project>
